@@ -8,7 +8,7 @@ export const generateSegmentReport = async (
 ) => {
   const startDate = moment().add(1, 'days').format('YYYY-MM-DD')
   const endDate = moment().add(periodInDays, 'days').format('YYYY-MM-DD')
-  const siteZoneTargeting = [{ SiteId: 1279000 }, { SiteId: 1278981 }]
+  const siteZoneTargeting = [{ SiteId: 106 }, { SiteId: 112 }]
   const targeting = segmentTargeting(segmentTargetingArray)
   const requestBody = {
     type: 'available',

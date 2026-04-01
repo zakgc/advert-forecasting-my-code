@@ -25,7 +25,7 @@ describe('generateSegmentReport', () => {
     jest.useRealTimers()
   })
 
-  const siteZoneTargeting = [{ SiteId: 1279000 }, { SiteId: 1278981 }]
+  const siteZoneTargeting = [{ SiteId: 106 }, { SiteId: 112 }]
   const segmentTargetingArray = ['tech-mobile']
   const expectedTargeting =
     '($user.interests = ["tech-mobile"] or $user.custom.viewed_categories = ["tech-mobile"] or $user.custom.issued_categories = ["tech-mobile"])'

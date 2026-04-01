@@ -15,8 +15,8 @@ describe('formatSegmentReport', () => {
 
   const id = '123'
   const date = '14-04-2024'
-  const ukAppSiteId = 1279000
-  const ukWebSiteId = 1278981
+  const ukAppSiteId = 106
+  const ukWebSiteId = 112
   const ukAppBooked = 108
   const ukAppAvailable = 2077
   const ukWebBooked = 451

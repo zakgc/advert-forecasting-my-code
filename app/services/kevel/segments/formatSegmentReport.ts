@@ -35,7 +35,7 @@ export const formatSegmentReport = async (
     endDateTime: '2024-06-13T14:26:45.338Z',
     progress: 100.0,
     lastUpdateDateTime: '2024-06-13T14:26:45.338Z',
-    id: '8154962a-4b5d-455f-948d-446e6dcbfafc',
+    id: 'uuid',
     status: 'finished',
     resultStatus: 'success',
     desc: 'Forecast is finished',
@@ -66,7 +66,7 @@ export const formatSegmentReport = async (
     endDateTime: '2024-06-13T14:26:44.828Z',
     progress: 100.0,
     lastUpdateDateTime: '2024-06-13T14:26:44.828Z',
-    id: 'c45cba37-b089-46f0-ad69-b18e5a9cb249',
+    id: 'uuid',
     status: 'finished',
     resultStatus: 'success',
     desc: 'Forecast is finished',
@@ -149,13 +149,13 @@ const groupReports = (report: any) => {
     {
       values,
       key: {
-        $site: 1279000
+        $site: 106
       }
     },
     {
       values,
       key: {
-        $site: 1278981
+        $site: 112
       }
     }
   ]

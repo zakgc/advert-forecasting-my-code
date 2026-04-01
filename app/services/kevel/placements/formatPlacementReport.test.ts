@@ -15,11 +15,11 @@ describe('formatPlacementReport', () => {
 
   const id = '123'
   const date = '14-04-2024'
-  const searchId = 309579
-  const ukAppSiteId = 1279000
+  const searchId = 206
+  const ukAppSiteId = 106
   const ukAppBookedSearchImpressions = 3
   const ukAppAvailableSearchImpressions = 7
-  const usAppSiteId = 1279001
+  const usAppSiteId = 105
   const usAppBookedSearchImpressions = 30
   const usAppAvailableSearchImpressions = 70
   const unsupportedZone = 4

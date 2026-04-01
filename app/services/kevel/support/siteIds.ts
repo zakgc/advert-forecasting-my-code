@@ -1,16 +1,16 @@
 export const siteIds: SiteIds = {
-  1279009: { country: 'au', platform: 'app' },
-  1279008: { country: 'ca', platform: 'app' },
-  1279007: { country: 'fr', platform: 'app' },
-  1279006: { country: 'de', platform: 'app' },
-  1279001: { country: 'us', platform: 'app' },
-  1279000: { country: 'uk', platform: 'app' },
-  1278999: { country: 'us', platform: 'web' },
-  1278989: { country: 'de', platform: 'web' },
-  1278988: { country: 'fr', platform: 'web' },
-  1278985: { country: 'ca', platform: 'web' },
-  1278982: { country: 'au', platform: 'web' },
-  1278981: { country: 'uk', platform: 'web' }
+  101: { country: 'au', platform: 'app' },
+  102: { country: 'ca', platform: 'app' },
+  103: { country: 'fr', platform: 'app' },
+  104: { country: 'de', platform: 'app' },
+  105: { country: 'us', platform: 'app' },
+  106: { country: 'uk', platform: 'app' },
+  107: { country: 'us', platform: 'web' },
+  108: { country: 'de', platform: 'web' },
+  109: { country: 'fr', platform: 'web' },
+  110: { country: 'ca', platform: 'web' },
+  111: { country: 'au', platform: 'web' },
+  112: { country: 'uk', platform: 'web' }
 }
 
 interface SiteIds {
