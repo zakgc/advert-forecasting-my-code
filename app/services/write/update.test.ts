@@ -1,0 +1,39 @@
+import { update } from './update'
+import { google } from 'googleapis'
+
+jest.mock('googleapis', () => ({
+  google: {
+    sheets: jest.fn().mockReturnValue({
+      spreadsheets: {
+        values: {
+          update: jest.fn().mockResolvedValue('')
+        }
+      }
+    })
+  }
+}))
+
+describe('write', () => {
+  const sheetId = 'test-google-sheet-id'
+  const writeRange = 'test_sheet!A2'
+  const writeData = [
+    ['this', 'is', 'a', 'test'],
+    ['this', 'is', 'a', 'test'],
+    ['this', 'is', 'a', 'test']
+  ]
+
+  it('should call update method with correct arguments', async () => {
+    await update(writeRange, writeData)
+
+    expect(
+      google.sheets({ version: 'v4', auth: expect.any(Object) }).spreadsheets.values.update
+    ).toHaveBeenCalledWith({
+      spreadsheetId: sheetId,
+      range: writeRange,
+      valueInputOption: 'USER_ENTERED',
+      requestBody: {
+        values: writeData
+      }
+    })
+  })
+})
